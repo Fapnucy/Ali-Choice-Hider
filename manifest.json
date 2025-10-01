@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "AliExpress Choice Hider",
+  "version": "1.0.0",
+  "description": "Ukrywa lub wyszarza oferty z oznaczeniem „Choice” na AliExpress.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Choice Hider",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.aliexpress.com/*",
+        "*://*.aliexpress.ru/*",
+        "*://m.aliexpress.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
