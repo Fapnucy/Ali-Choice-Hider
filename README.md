@@ -1,5 +1,5 @@
 
-[readme.md.txt](https://github.com/user-attachments/files/22642649/readme.md.txt)
+
 AliExpress Choice Hider
 
 To rozszerzenie Chrome ukrywa lub wyszarza produkty ze znacznikiem „Choice” na AliExpress.
